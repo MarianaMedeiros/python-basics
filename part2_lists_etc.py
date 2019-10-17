@@ -44,3 +44,49 @@ print(x)
 
 """ Se quiser manter o valor inicial de x, pode-se usar uma adição na lista """
 
+x = [1, 2, 3]
+y = x + [4, 5, 6]
+print(x)
+print(y)
+
+""" Mas com mais frequência, anexamos um item de cada vez: """
+
+x = [1, 2, 3]
+x.append(0) # x é [1, 2, 3, 0]
+y = x[-1] # é 0
+z = len(x) # é 4
+
+""" Também pode ser útil desfazer listas, mas a quantidade de elementos 
+dos dois lados deve ser a mesma, ou dará um ValueError: """
+x, y = [1, 2] # x é 1, y é 2
+
+""" Também podemos usar o underline para um valor que não iremos utilizar: """
+
+_, y[1,2] # y é 2, o primeiro elemento foi descartado
+
+""" Tuplas - Tudo o que se faz com uma lista (com exceção de modificá-la), é possível fazer em uma tupla 
+E a espacificamos através dos parênteses ou nada, em vez de colchete:"""
+my_list = [1, 2]
+my_tuple = (1, 2)
+other_tuple = 3, 4
+my_list[1] = 3
+
+try:
+    my_tuple[1] = 3
+except TypeError:
+        print("cannot modify a tuple")
+
+""" As tuplas são eficazes para retornar múltiplos valores a partir de funções: """
+def sum_and_product(x, y):
+    return (x + y), (x * y)
+
+sp = sum_and_product(2, 3) # é igual a (5, 6)
+
+s, p = sum_and_product(5, 10) # s = 5, p = 10
+
+""" As tuplas e listas podem ser usadas ara atribuições múltiplas: """
+x, y = 1, 2
+x, y = y, x
+
+""" Dicionários - to be continued..."""
+
