@@ -1,2 +1,2 @@
 # python-basics
-Python Basics for Data Scientists Wannabe ;)
+Python Basics for Data Scientist Wannabes ;)
