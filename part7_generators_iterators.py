@@ -33,15 +33,15 @@ def natural_numbers():
         yield n
         n += 1
 
-""" O outro lado da preguiça é que você somente pode iterar com um gerador uma vez.
- Se você precisar iterar múltiplas vezes, você terá que recriar um gerador todas
- as vezes ou usar uma lista."""
-
 import sys
 
 a = range(1, 10000)
 print(type(a))
 print (sys.getsizeof(a))
+
+""" O outro lado da preguiça é que você somente pode iterar com um gerador uma vez.
+ Se você precisar iterar múltiplas vezes, você terá que recriar um gerador todas
+ as vezes ou usar uma lista."""
 
 """ Uma segunda forma de criar geradores é usar compreensões de for dentro de parênteses: """
 
